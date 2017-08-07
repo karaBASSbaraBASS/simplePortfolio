@@ -1,0 +1,106 @@
+@import "smart-grid.scss";
+@import "bootstrap.css";
+@import "scssFontAwesome/font-awesome.scss";
+@import "fonts.scss";
+@include reset();
+@import "header.scss";
+
+#headerWrap {
+  background: url(../img/headerCover/jack1.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 800px;
+  width: 100%;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  h1 {
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  h2 {
+    color: #FFF;
+    font-size: 40px;
+  }
+}
+.headerMain {
+  padding-top: 140px;
+}
+.headerButton {
+  border: 2px solid;
+  color: #fff;
+  padding:  10px;
+  margin:   30px;
+  display:  block;
+  width:  300px !important;
+  text-decoration:  none !important;
+  -webkit-border-radius:  50px;
+        border-radius:  50px;
+}
+.buttonWrap {
+  display: flex;
+  -webkit-justify-content:  center;
+          justify-content:  center;
+}
+.aboutBlocks {
+  padding: 70px 0 70px 0;
+  h4 {
+    font-size: 25px;
+  }
+  i {
+    font-size:  40px;
+    padding:  15px;
+    border: 2px solid;
+    -webkit-border-radius:  50%;
+            border-radius:  50%;
+  }
+}
+.mobilesBlocks {
+  padding: 70px 0 70px 0;
+  background: #e0e0e0;
+  text-align: center;
+  h4 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+.laptopBlock {
+  padding: 70px 0 70px 0;
+  h4 {
+    font-size: 35px;
+  }
+}
+
+.someDescriptionBlock {
+  background-color: #F85C37;
+  color: #fff;
+  padding: 70px 0 70px 0;
+}
+
+.footerContacts {
+  padding: 70px 0 70px 0;
+  i {
+    font-size: 40px;
+  }
+  a + a {
+    margin-left: 20px;
+  }
+}

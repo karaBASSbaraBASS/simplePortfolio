@@ -1,0 +1,171 @@
+html {
+  font-size: 16px;
+}
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+  
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  
+  -webkit-font-smoothing: antialiased; // сделает фон более округлым при масштабировании
+  -webkit-overflow-scrolling: touch; // позволит скролить тачскрином
+  
+  margin-top: 70px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #333;
+}
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.centered {
+  text-align: center;
+}
+a {
+  color: #f85c37 !important;
+  &:hover, &:focus {
+    color: #7b7b7b !important;
+    text-decoration: none;
+    outline: #000;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  height: 100%;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content {
+  width: 100%;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.footer {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed !important;
+  z-index: 999;
+}
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+  .active a {
+    background-color: #ff7878;
+    text-decoration: none;
+  }
+  .navbar-brand {
+    color: #999;
+    font-size: 22px;
+  }
+}
+
+.navbar-toggler .icon-bar {
+      background-color: #888;
+    }
+
+.navbar-fixed-top {
+/* цепляет хедер к верхней части екрана */
+}
+.container {
+  width:  100%;
+    -webkit-justify-content:  space-around;
+            justify-content:  space-around;
+}
+.navbar-collapse {
+    -webkit-justify-content:  end;
+            justify-content:  end;
+}
+.nav {
+ 
+}
+.nav li {
+  margin-left:  10px;
+}
+.nav li a{
+  display: block;
+  padding:  10px;
+  color: #FFF !important;
+  &:hover {
+    text-decoration: none; 
+    color: #7b7b7b !important;
+    text-decoration: none;
+  }
+}
+/* рисуем иконку гамбургера из трех горизонтальных линий */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 30px;
+}
+.hamburger1,
+.hamburger2,
+.hamburger3 {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 28px;
+  background: #545454;
+  transition: all 200ms ease-in-out;
+  z-index: 10;
+}
+.hamburger1 {
+  top: calc(50% - 10px);
+}
+  
+.hamburger3 {
+  top: calc(50% + 10px);
+}
+/* Добавим анимацию, первую и третью полосу ставим под 45град. среднюю заливаем цветом фона. */
+.convert .hamburger1 {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.convert .hamburger2 {
+  background-color: transparent;
+}
+.convert .hamburger3 {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+.navbar-brand {
+  color: #999 !important;
+  
+  &:hover {
+    color: white !important;
+  }
+}
