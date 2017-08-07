@@ -3415,6 +3415,7 @@ hr {
   padding-bottom: 15px;
   position: fixed !important;
   z-index: 999;
+  max-width: 1440px;
 }
 
 .navbar-inverse {
@@ -3546,7 +3547,7 @@ hr {
 }
 
 .headerMain {
-  padding-top: 140px;
+  padding-top: 400px;
 }
 
 .headerButton {
@@ -3582,6 +3583,44 @@ hr {
   padding: 15px;
   border: 2px solid;
   border-radius: 50%;
+}
+
+.titleFirst {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.servicesList {
+  text-align: left;
+}
+
+.servicesList li {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+}
+
+.servicesList li:before {
+  content: "\f164";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.servicesList li + li {
+  margin-top: 10px;
 }
 
 .mobilesBlocks {

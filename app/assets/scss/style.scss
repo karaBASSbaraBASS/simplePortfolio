@@ -26,8 +26,9 @@
   }
 }
 .headerMain {
-  padding-top: 140px;
+  padding-top: 400px;
 }
+
 .headerButton {
   border: 2px solid;
   color: #fff;
@@ -56,6 +57,36 @@
     -webkit-border-radius:  50%;
             border-radius:  50%;
   }
+}
+.titleFirst {
+  margin-bottom: 60px;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.servicesList {
+  text-align: left;
+  li {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      content: "\f164";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: #000;
+      font-size: 18px;
+      padding-right: 0.5em;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  li + li {
+    margin-top: 10px;
+  } 
 }
 .mobilesBlocks {
   padding: 70px 0 70px 0;
