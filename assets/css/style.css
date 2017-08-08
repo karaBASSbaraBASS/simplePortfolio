@@ -3585,6 +3585,7 @@ hr {
   border-radius: 50%;
 }
 
+.portfolioSlider,
 .titleFirst {
   margin-bottom: 60px;
   display: -webkit-box;
