@@ -4,7 +4,7 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -28,19 +28,22 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: 30px;
-  right: 60px;
+  bottom: -30px;
   width: 100%;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('/assets/img/slider/controls.png') center center no-repeat #ffffff;
+  background: url('../img/bx_loader.gif') center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -50,7 +53,7 @@ ul.bxslider {
 }
 /* PAGER */
 .bx-wrapper .bx-pager {
-  text-align: right;
+  text-align: center;
   font-size: .85em;
   font-family: Arial;
   font-weight: bold;
@@ -68,12 +71,6 @@ ul.bxslider {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box;
-  background: #fff;
-  border: 2px solid #000;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
@@ -94,7 +91,7 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('/assets/img/slider/controls.png') no-repeat 0 -32px;
+  background: url('../img/controls.png') no-repeat 0 -32px;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
@@ -102,7 +99,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('/assets/img/slider/controls.png') no-repeat -43px -32px;
+  background: url('../img/controls.png') no-repeat -43px -32px;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
@@ -131,7 +128,7 @@ ul.bxslider {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url('/assets/img/slider/controls.png') -86px -11px no-repeat;
+  background: url('../img/controls.png') -86px -11px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-start:hover,
@@ -145,7 +142,7 @@ ul.bxslider {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url('/assets/img/slider/controls.png') -86px -44px no-repeat;
+  background: url('../img/controls.png') -86px -44px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
