@@ -3525,38 +3525,167 @@ hr {
   color: white !important;
 }
 
+.btn-update {
+  display: none;
+}
+
+.counter {
+  display: inline-flex;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(1em + 1vmin);
+  transition: height .2s ease-in-out;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
+}
+
+.percentage {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  vertical-align: middle;
+  transform: translate3d(0, -50%, 0);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input {
+  width: 200px;
+}
+
+.bg-style {
+  padding: 2em;
+}
+
+.htmlList {
+  text-align: left;
+}
+
+.htmlList li {
+  display: block;
+  position: relative;
+  padding-left: 1.5625rem;
+}
+
+.htmlList li:before {
+  content: "\f13b";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.htmlList li + li {
+  margin-top: 10px;
+}
+
+.csslList {
+  text-align: left;
+}
+
+.csslList li {
+  display: block;
+  position: relative;
+  padding-left: 1.5625rem;
+}
+
+.csslList li:before {
+  content: "\f13c";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.csslList li + li {
+  margin-top: 10px;
+}
+
+.jsList {
+  text-align: left;
+}
+
+.jsList li {
+  display: block;
+  position: relative;
+  padding-left: 1.5625rem;
+}
+
+.jsList li:before {
+  content: "\f0f4";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.jsList li + li {
+  margin-top: 10px;
+}
+
 #headerWrap {
   background: url(../img/headerCover/jack1.jpg) no-repeat center top;
   background-attachment: relative;
   background-position: center center;
-  min-height: 800px;
+  min-height: 50rem;
   width: 100%;
   background-size: cover;
 }
 
 #headerWrap h1 {
   color: #FFF;
-  font-size: 70px;
+  font-size: 4.375rem;
   font-weight: 300;
   letter-spacing: 3px;
 }
 
 #headerWrap h2 {
   color: #FFF;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .headerMain {
-  padding-top: 400px;
+  padding-top: 25rem;
 }
 
 .headerButton {
   border: 2px solid;
   color: #fff;
-  padding: 10px;
-  margin: 30px;
+  padding: 0.625rem;
+  margin: 1.875rem;
   display: block;
-  width: 300px !important;
+  width: 18.75rem !important;
   text-decoration: none !important;
   border-radius: 50px;
 }
@@ -3571,15 +3700,15 @@ hr {
 }
 
 .aboutBlocks {
-  padding: 70px 0 70px 0;
+  padding: 4.375rem 0 4.375rem 0;
 }
 
 .aboutBlocks h4 {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .aboutBlocks i {
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 15px;
   border: 2px solid;
   border-radius: 50%;
@@ -3603,7 +3732,7 @@ hr {
 .servicesList li {
   display: block;
   position: relative;
-  padding-left: 25px;
+  padding-left: 1.5625rem;
 }
 
 .servicesList li:before {
@@ -3625,14 +3754,14 @@ hr {
 }
 
 .mobilesBlocks {
-  padding: 70px 0 70px 0;
+  padding: 4.375rem 0 4.375rem 0;
   background: #e0e0e0;
   text-align: center;
 }
 
 .mobilesBlocks h4 {
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .tilt {
@@ -3646,7 +3775,7 @@ hr {
 }
 
 .laptopBlock {
-  padding: 70px 0 70px 0;
+  padding: 4.375rem 0 4.375rem 0;
 }
 
 .laptopBlock h4 {
@@ -3656,17 +3785,49 @@ hr {
 .someDescriptionBlock {
   background-color: #F85C37;
   color: #fff;
-  padding: 70px 0 70px 0;
+  padding: 4.375rem 0 4.375rem 0;
 }
 
 .footerContacts {
-  padding: 70px 0 70px 0;
+  padding: 4.375rem 0 4.375rem 0;
 }
 
 .footerContacts i {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .footerContacts a + a {
   margin-left: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .progres {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .progres {
+    width: 90%;
+    float: left;
+    margin: 0 1%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .progres {
+    width: 45%;
+  }
 }
