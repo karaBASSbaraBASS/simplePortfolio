@@ -36,10 +36,10 @@
                                 <a class="nav__item-link" href="#home">Обо мне</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__item-link" href="#about">Услуги</a>
+                                <a class="nav__item-link" href="#portfolio">Работы</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__item-link" href="#portfolio">Работы</a>
+                                <a class="nav__item-link" href="#about">Услуги</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__item-link" href="#partners">Струдничество</a>
@@ -54,45 +54,65 @@
             <section id="headerWrap" data-section="home">
                 <div class="container headerMain">
                     <div class="row d-flex justify-content-center">
-                        <div class="centered flex-column col-lg-8">
+                        <div class="centered flex-column col-lg-8 mainAbout">
                             <h1>Геллерт Евгений</h1>
-                            <h2>Web-разработчик / HTML-верстальщик</h2>
-                            <h2>Программист PHP / JavaScript</h2>
-                            <div class="buttonWrap">    
+                            <h2>Web-разработчик <span>//</span> HTML-верстальщик</h2>
+                            <h2>Программист PHP <span>//</span> JavaScript</h2>
+                            <!-- <div class="buttonWrap">    
                                 <a href="#" class="headerButton">Вызвать модалку сейчас!</a>
+                            </div> -->
+                            <div class="arrowDown">
+                            <a href="" class="arrowDown__link">
+                                <div class="arrowDown__border">
+                                    <div class="arrowDown__arrow1"> 
+                                    </div>
+                                    <div class="arrowDown__arrow2"> 
+                                    </div>
+                                    <div class="arrowDown__arrow3"> 
+                                    </div>
+                                </div>
+                            </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="laptopBlock" data-section="advantages">
+            <section class="laptopBlock advantages" data-section="advantages">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="centered flex-column col-lg-12">
                             <h2>Скиллы</h2>
                            
                                 <div class="row">
-                                  <div class="progres col-md-6 col-sm-3">
+                                  <div class="progres col-md-3 col-sm-6">
                                     <div class="counter" data-cp-percentage="90" data-cp-color="#f66625">
                                     </div>
                                     <h4>HTML</h4>
                                     <ul class="htmlList">
                                         <li>Валидная кроссбраузерная верстка.</li>   
-                                        <li>Адаптивная верстка на базе Bootstrap/Smart Grid</li>
-                                        <li>Использую семантические элементы HTML5</li>
+                                        <li>Адаптивная верстка на базе Bootstrap/Smart Grid.</li>
+                                        <li>Использую семантические элементы HTML5.</li>
+                                        <li>Использую элементы SVG для более качественного отображения иконок и создания интерактивных элементов.</li>
                                     </ul>
                                   </div>
-                                  <div class="progres col-md-6 col-sm-3">
+                                  <div class="progres col-md-3 col-sm-6">
                                     <div class="counter" data-cp-percentage="85" data-cp-color="#13a2de"></div>
                                     <h4>CSS</h4>
                                     <ul class="csslList">
-                                        <li>Валидная кроссбраузерная верстка.</li>   
-                                        <li>Адаптивная верстка на базе Bootstrap/Smart Grid</li>
-                                        <li>Использую семантические элементы HTML5</li>
+                                        <li>В работе использую SASS + gulp, что позволяет автоматически вносить кроссбраузерные правки, удалять неиспользуемый код и в целом увеличивает скорость верстки.</li>   
+                                        
+                                        <li>В работе использую элементы CSS3 такие как: 
+                                        <ul class="csslList-twolevel">
+                                            <li>CSS Gradients</li>
+                                            <li>Border-radius</li>
+                                            <li>Box-shadow</li>
+                                            <li>Opacity (rgba)</li>
+                                            <li>Animations & Transforms.</li>
+                                        </ul>
                                     </ul>
                                   </div>
-                                  <div class=" progres col-md-6 col-sm-3">
-                                    <div class="counter" data-cp-percentage="35" data-cp-color="#6aba2f"></div>
+                                  <div class=" progres col-md-3 col-sm-6">
+                                    <div class="counter" data-cp-percentage="44" data-cp-color="#6aba2f"></div>
                                     
                                     <h4>Scripts</h4>
                                     <ul class="jsList">
@@ -101,10 +121,14 @@
                                         <li>Изучаю Vue.js.</li>
                                     </ul>
                                   </div>
-                                  <div class="progres col-md-6 col-sm-3">
-                                    <div class="counter" data-cp-percentage="44" data-cp-color="#8993be"></div>
+                                  <div class="progres col-md-3 col-sm-6">
+                                    <div class="counter" data-cp-percentage="35" data-cp-color="#8993be"></div>
                                     <h4>PHP</h4>
-                                    <p>Lorem ipsum dolor sit amet, consecte elit. Condimentum porttitor cursumus.</p>
+                                    <ul class="phpList">
+                                        <li>Изучаю framework Laravel.</li>   
+                                        <li>Знаю структуру MVC, умею писать несложные модули и контроллеры. </li>
+                                        <li>Пишу простые запросы в MYSQL.</li>
+                                    </ul>
                                   </div>
                                 </div>
 
@@ -112,6 +136,26 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+            </section>
+            <section class="container portfolioBlocks" data-section="portfolio">
+                <div class="row centered titleFirst">
+                    <h2>Перечень работ</h2>
+                </div>
+                <div class="row centered">
+                    <div class="col-lg-12 portfolioSlider">
+                        <div class="slider1">
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -151,29 +195,34 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-            <section class="container portfolioBlocks" data-section="portfolio">
-                <div class="row centered titleFirst">
-                    <h2>Перечень работ</h2>
-                </div>
-                <div class="row centered">
-                    <div class="col-lg-12 portfolioSlider">
-                        <div class="slider1">
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                <div class="row centered coffeCounter">
+                    
+                        <div class="container">
+                            <div class="row">
+                                 
+                                    <div class="col-sm-3">
+                                        <div class="counter-container text-center">
+                                            <div class="icon">
+                                                <i class="fa fa-2x fa-bar-chart">
+                                                    <span class="counter"> 
+                                                        - var count = (20494 * x)
+                                                        h1.count(data-number=32552*x) 0
+                                                    </span>
+                                                    <span class="title">
+                                                        <h3>чашек кофе</h3>  
+                                                    </span>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                            </div>                  
                         </div>
-                    </div>
+                    
                 </div>
             </section>
             
-            <section class="someDescriptionBlock" data-section="portfolio">
+            
+            <section class="someDescriptionBlock" data-section="partners">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="centered flex-column col-lg-8">

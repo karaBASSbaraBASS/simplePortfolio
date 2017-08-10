@@ -18,6 +18,12 @@ $(document).ready(function() {
   
 });
 
+$('.arrowDown__link').on('click', function(event) {
+	event.preventDefault();
+	var advantages = $('.advantages').offset().top - 100;
+	$('body, html').animate({scrollTop: advantages}, 500);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
 
   var circleProgress = (function(selector) {
@@ -133,8 +139,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   circleProgress('.counter');
 
-  // Gibt eine Zufallszahl zwischen min (inklusive) und max (exklusive) zurück
+  // Возвращает случайное число в диапазоне от мин (в комплекте) до макс (эксклюзивное)
   function getRandom(min, max) {
     return Math.random() * (max - min) + min;
   }
+});
+
+$(document).ready(function() {
+	$('h1.count').each(function() {
+		var $this = $(this),
+			$container = $this.closest('.counter-container'), // set this to element other than the actual element that is updating the number as counter increments
+			$value = $this.data('number');
+
+		$container.velocity({
+			tween: $value // tween value doesn't matter
+		}, {
+			queue: false,
+			easing: 'ease',
+			delay: 500,
+			duration: 6000, // this determines the number of "progres" steps
+			progress: function(elements, complete, remaining, start, tweenValue) {
+				return $this.text((Math.round(tweenValue)).toLocaleString());
+			}
+		});
+	});
+
 });
