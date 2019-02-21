@@ -3,12 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?54iD8sB9d77aczDxJJURckrpkK0DJuKO";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zendesk Chat Script-->
 </head>
 
 <body>
@@ -31,12 +40,13 @@
                         
                     </div>
                     <div class="navbar-collapse collapse navbar-right">
-                        <ul class="nav navbar-nav nav__list">
+                        <ul class="nav navbar-nav nav__list navAlignRight">
                             <li class="nav__item active">
                                 <a class="nav__item-link" href="#home">Обо мне</a>
                             </li>
+                            
                             <li class="nav__item">
-                                <a class="nav__item-link" href="#portfolio">Работы</a>
+                                <a class="nav__item-link" href="#portfolio">Портфолио</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__item-link" href="#about">Услуги</a>
@@ -44,6 +54,8 @@
                             <li class="nav__item">
                                 <a class="nav__item-link" href="#partners">Струдничество</a>
                             </li>
+
+
                             <li class="nav__item">
                                 <a class="nav__item-link" href="#contacts"><i class="fa fa-envelope-o"></i></a>
                             </li>
@@ -51,10 +63,12 @@
                     </div>
                 </div>
             </nav>
-            <section id="headerWrap" data-section="home">
-                <div class="container headerMain">
-                    <div class="row d-flex justify-content-center">
-                        <div class="centered flex-column col-lg-8 mainAbout">
+
+            <section  data-section="home" class="sectionFirst">
+                <div class="row d-flex justify-content-center">
+                    <div id="headerWrap" class="container headerMain ">
+                    </div>
+                    <div class="centered flex-column col-lg-10 mainAbout">
                             <h1>Геллерт Евгений</h1>
                             <h2>Web-разработчик <span>//</span> HTML-верстальщик</h2>
                             <h2>Программист PHP <span>//</span> JavaScript</h2>
@@ -74,10 +88,10 @@
                             </a>
                             </div>
                         </div>
-                    </div>
                 </div>
             </section>
-            <section class="laptopBlock advantages" data-section="advantages">
+
+            <section class="advantagesBlock advantages" data-section="advantages">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="centered flex-column col-lg-12">
@@ -116,9 +130,10 @@
                                     
                                     <h4>Scripts</h4>
                                     <ul class="jsList">
-                                        <li>Прохожу уроки learn.javascript.ru (Курс JavaScript/DOM).</li>   
+                                           
                                         <li>В работах использую слайдеры, табы, скроллы написанные на JQuery.</li>
-                                        <li>Изучаю Vue.js.</li>
+                                        <li>Изучаю React</li>
+                                        <li>Прохожу уроки ES6 от <a href="http://wesbos.com/">WESBOS</a> </li>
                                     </ul>
                                   </div>
                                   <div class="progres col-md-3 col-sm-6">
@@ -133,48 +148,244 @@
                                 </div>
 
                               <button class="btn-update"></button>
-                            </div>
                         </div>
-                        
                     </div>
+                        
                 </div>
+               
             </section>
+
             <section class="container portfolioBlocks" data-section="portfolio">
                 <div class="row centered titleFirst">
-                    <h2>Перечень работ</h2>
+                    <h2>Портфолио</h2>
                 </div>
                 <div class="row centered">
-                    <div class="col-lg-12 portfolioSlider">
-                        <div class="slider1">
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
-                          <div class="slide"><img src="assets/img/laptop/laptop_1.png"></div>
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/whiteSquare.png" class="whiteSquare galery__img"></img>
+                            <a href="http://whitesquare.cf" target="_blank" class="caption">
+                                <h3 class="caption__title">white <span>Square</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/ CSS&nbsp;</br>
+                                    PHP</br>
+                                    MySQL
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Белый кубик</h2>
+                            <p>Пример верстки блога с последующей его натяжкой на вордпресс.</p>
+                            
                         </div>
                     </div>
+                
+
+                
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/goodInc.png" class="goodInc galery__img"></img>
+                            <a href="http://howaboutgoodinc.cf/" target="_blank" class="caption">
+                                <h3 class="caption__title">good <span>inc</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5</br>
+                                    SASS</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Good Inc</h2>
+                            <p>Пример верстки главной страницы новостного портала. Чисто верстка + адаптивная верстка.</p>
+                        </div>
+                    </div>
+                
+
+               
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/vekMebel.png" class="vekMebel galery__img"></img>
+                            <a href="http://vek-mebel.com.ua/" target="_blank" class="caption">
+                                <h3 class="caption__title">vek <span>mebel</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/CSS&nbsp;</br>
+                                    PHP/MySQL/JQuery</br>
+                                    cms Joomla</br>
+                                    Bootstrap&nbsp;3</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Век Мебель</h2>
+                            <p>Каталог товаров мебельной компании на базе Joomla (aдаптивный дизайн, галерея товаров, карта проезда, чат для контакта с продавцом). Полный цыкл разработки, "под ключ".</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/qote-mashine_ml.png" class="qote-mashine_ml galery__img"></img>
+                            <a href="/qoteMashine/" target="_blank" class="caption">
+                                <h3 class="caption__title">qote <span>mashine</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/CSS&nbsp;</br>
+                                    AJAX</br>
+                                    JQuery</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Генератор цитат</h2>
+                            <p>Работа является результатом изучения материала по AJAX. Приложение отправляет запрос к API на стороннем ресурсе (ресурс временно не работает), считывает ответ и показывает его пользователю. Цытатой можно поделится в твиттере.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/bomb-rush_tk.png" class="bomb-rush_tk galery__img"></img>
+                            <a href="/bombRush/" target="_blank" class="caption">
+                                <h3 class="caption__title">bomb <span>rush</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/CSS&nbsp;</br>
+                                    JQuery</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Мини игра</h2>
+                            <p>Бомбочки появляются в верхней строке и падают вниз. Как только бомбочка коснется нижней границы екрана - отнимется 1 еденица здоровья. Бомбы можно обезвреживать кликая по ним (мышью/пальцем). Суть игры в том чтобы обезвредить наибольшее количество бомб.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/skydiving_com_ua.png" class="bomb-rush_tk galery__img"></img>
+                            <a href="http://skydiving.com.ua" target="_blank" class="caption">
+                                <h3 class="caption__title">sky <span>diving</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/SASS&nbsp;</br>
+                                    Flexbox Smart Grid</br>
+                                    JQuery/gulp</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Парашютный клуб</h2>
+                            <p>На сайте присутвует лендинг, главная с описаниями услуг, блог с фильтрацией по категориям, календарь с выбором даты прыжка и страница покупки сертификатов. Так-же реализованна интерактивная карта с выбором аеродрома.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/cryptofx.jpg" class="bomb-rush_tk galery__img"></img>
+                            <a href="/cryptofx/" class="caption">
+                                <h3 class="caption__title">crypto<span>-FX</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/SASS&nbsp;</br>
+                                    Bootstrap4 grid/popup</br>
+                                    BX slider</br>
+                                    JQuery/gulp</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Трейдинговый портал</h2>
+                            <p>Адаптивная, кросс-браузерная верстка сайта. Присутсвуют главная с описаниями услуг, новостной блог, формы входа / выхода /смены языка, "аккордеоны" с часто задаваемыми вопросами и контактами.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/vesna.jpg" class="bomb-rush_tk galery__img"></img>
+                            <a href="https://www.vesnamedia.com/" target="_blank" class="caption">
+                                <h3 class="caption__title">vesna<span>&nbsp;media</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/css3&nbsp;</br>
+                                    Bootstrap4 grid</br>
+                                    fotorama slider</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Женский журнал</h2>
+                            <p>На этом сайте необходимо было добавить раздел галерей и соответсвенно добавить слайдер. Так-же исправление "поехавших" форм, шрифтов и кнопок.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/harveast.png" class="bomb-rush_tk galery__img"></img>
+                            <a href="/harveast/" class="caption">
+                                <h3 class="caption__title">harv<span>&nbsp;east</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/css3&nbsp;</br>
+                                    smart grid</br>
+                                    webpack/JQuery</br>
+                                </p>
+                                
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Корпоративный сайт</h2>
+                            <p>Верстка корпоративного сайта. На сайте присутвует новостной портал, страница с формированием заявок на отделы, опросник, поиск контактов сотрудников, архив документов для скачивания.</p>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 portfolio__item">
+                        <div class="galery__item">
+                            <img src="assets/img/portfolio/SafeSurrogacy.jpg" class="bomb-rush_tk galery__img"></img>
+                            <a href="https://safesurrogacy.com" class="caption">
+                                <h3 class="caption__title">safe<span>&nbsp;surrogacy</span></h3>
+                                <p class="caption__description">
+                                    Технологии:</br>
+                                    HTML&nbsp;5/css3&nbsp;</br>
+                                    bootstrap4</br>
+                                    gulp/JQuery</br>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="description__item">
+                            <h2>Сурогатное материнство</h2>
+                            <p>Верстка сайта для компании предлагающей услуги сурогатного материнства. На сайте присутвует форма выбора программ доннорства, страница с выбором "фоторобота" и физических данных доннора, блог, аккордеон с ответами на вопросы. И многое другое...</p>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </section>
+            
             <section class="container aboutBlocks" data-section="about">
                 
                 <div class="row centered titleFirst">
-                    <h2>Перечень услуг</h2>
+                    <h2>Предлагаю следующие услуги</h2>
                 </div>
-                <div class="row centered">
+                <div class="row centered bottomGap">
 
                     <div class="col-lg-4">
                         <i class="fa fa-bug"></i>
                         <h4>Разработка</h4>
                         <ul class="servicesList">
                             <li>верстка HTML-сайта из макета</li>
-                            <li>регистрация домена, хостинга</li>
-                            <li>установка и настройка Вашего сайта на хостинг</li>
-                            <li>публикация сайта в интернете</li>
-                            <li>наполнение сайта Вашим конентом</li>
+                            <li>адаптивная верстка под все устройства</li>
+                            <li>Доработка дополнительного функционала (слайдер, карта проезда, контактные формы связи...)</li>
                         </ul>  
                     </div>
                     <div class="col-lg-4">
@@ -191,43 +402,22 @@
                         <h4>Администрирование</h4>
                         <ul class="servicesList">
                             <li>сопровождение и администрирование Ваших веб-сайтов</li>
-                            <li>Доработка дополнительного функционала (слайдер, карта проезда, контактные формы связи...)</li>
+                            <li>публикация сайта в интернете</li>
+                            <li>наполнение сайта Вашим конентом</li>
+                            <li>регистрация домена, хостинга</li>
+                            <li>перенос Вашего сайта на хостинг</li>
                         </ul>
                     </div>
                 </div>
-                <div class="row centered coffeCounter">
-                    
-                        <div class="container">
-                            <div class="row">
-                                 
-                                    <div class="col-sm-3">
-                                        <div class="counter-container text-center">
-                                            <div class="icon">
-                                                <i class="fa fa-2x fa-bar-chart">
-                                                    <span class="counter"> 
-                                                        - var count = (20494 * x)
-                                                        h1.count(data-number=32552*x) 0
-                                                    </span>
-                                                    <span class="title">
-                                                        <h3>чашек кофе</h3>  
-                                                    </span>
-                                                </i>
-                                            </div>
-                                        </div>
-                                    </div> 
-                            </div>                  
-                        </div>
-                    
-                </div>
+                
             </section>
-            
             
             <section class="someDescriptionBlock" data-section="partners">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
-                        <div class="centered flex-column col-lg-8">
-                            <h4>Очень важное описание</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt reiciendis aut molestiae optio! Et, omnis, quibusdam. Possimus soluta veniam voluptas?</p>
+                        <div class="centered flex-column col-lg-10">
+                            <h4>Партнерство</h4>
+                            <p>Я всегда открыт для партнерства с другими разработчиками или веб-студиями связанными с созданием и раскруткой сайтов. Приглашаю к сотрудничеству, всех кто заинтересован на взаимовыгодных условиях создавать качественные веб сайты. Готов стать надежным партнером и приступить к обсуждению любых производственных и коммерческих вопросов.</p>
                         </div>
                     </div>
                 </div>
@@ -238,18 +428,18 @@
             <div class="container">
                 <div class="row d-flex justify-content-center footerContacts">
                     <div class="centered flex-column col-lg-6">
-                        <h4>С нами очень просто связатся</h4>
-                        <p>Нажимайте на иконки и у вас все получится ,kg,kf,kf,kdvdf</p>
+                        <h4>Чтобы со мной связатся воспользуйтесь формой чата.</h4>
                     </div>
                     <div class="centered flex-column col-lg-6">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-vk"></i></a>
+                        <a href="#"><i class="fa fa-vk"></i></a> -->
+                        <img src="assets/img/contactloop.gif" alt="contactloop">
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="centered flex-column col-lg-10">
-                        <p>Копирайт и все дела там...</p>
+                        <p>© All Rights Reserved. Designed By Jack 2017 </p>
                     </div>
                 </div>
             </div>

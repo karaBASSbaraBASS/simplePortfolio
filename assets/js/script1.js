@@ -1,27 +1,25 @@
 $(document).ready(function() {
-    
-        $('.navbar-toggler').click(function(e) {
-            e.preventDefault();
+  $('.navbar-toggler').click(function(e) {
+    e.preventDefault();
             
-            $(this).toggleClass('convert');
-      });
-
-    $(document).ready(function(){
-    $('.slider1').bxSlider({
-      slideWidth: 400,
-      minSlides: 1,
-      maxSlides: 3,
-      moveSlides: 1,
-      slideMargin: 10
-    });
-  });
-  
+    $(this).toggleClass('convert');
 });
 
-$('.arrowDown__link').on('click', function(event) {
-  event.preventDefault();
-  var advantages = $('.advantages').offset().top - 100;
-  $('body, html').animate({scrollTop: advantages}, 500);
+$(document).ready(function(){
+	$('.slider1').bxSlider({
+	 slideWidth: 400,
+	 minSlides: 1,
+	 maxSlides: 3,
+	 moveSlides: 1,
+	 slideMargin: 10
+	});
+}); 
+$(document).ready(function(){
+  $('.arrowDown__link').on('click', function(event) {
+  	event.preventDefault();
+  	var advantages = $('.advantages').offset().top - 100;
+  	$('body, html').animate({scrollTop: advantages}, 500);
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -137,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
+
   circleProgress('.counter');
 
   // Возвращает случайное число в диапазоне от мин (в комплекте) до макс (эксклюзивное)
@@ -183,15 +182,3 @@ $(document).ready(function() {
   });
 
 });
-
-// magnific popup gallery
-$(document).ready(function() {
-// This will create a single gallery from all elements that have class "gallery-item"
-  $('.gallery-item').magnificPopup({
-    type: 'image',
-    gallery:{
-      enabled:true
-    }
-  });
-});
-// magnific popup gallery end

@@ -1,0 +1,60 @@
+
+  body {
+  -webkit-user-select: none;
+  /* запетить выделять текст */   
+  background-color: black;
+  /* заливка черным цветом */ 
+  overflow: hidden;
+  overflow-y: hidden;
+  /* если елемент вылазит за границы окна, убрать полосы прокрутки по оси Х/У */
+  }
+
+  #health {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  height: 20px;
+  width: 35px;
+  text-align: center;
+  padding-top: 2px;
+  color: white;
+  background-color: gray;
+  text-shadow: black 1px 1px 1px;
+  border-radius: 20px 0px 0px 20px;
+  }
+  #score {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  height: 20px;
+  width: 35px;
+  text-align: center;
+  padding-top: 2px;
+  color: white;
+  background-color: gray;
+  text-shadow: black 1px 1px 1px;
+  border-radius: 0px 20px 20px 0px;
+  }
+  
+  #die_message {
+  font-size: 100px;
+  text-align: center;
+  background-color: gray;
+  text-shadow: black 1px 1px 1px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 20%;
+  }
+  
+  .bombs {
+  position: absolute;
+/*  top: -150px; */
+  width: 35px;
+  height: 45px; 
+  text-align: center;
+  padding: 0px 0px 20px 0px;;
+  color: white;
+  background-color: green;
+  /*  text-shadow: black 1px 1px 1px; */
+  border-radius: 0px 0px 20px 20px;
+  font-size: 250%;
+  }
