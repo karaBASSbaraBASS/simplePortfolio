@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(109, 232, 113);
+  padding-top: 10%;
+}
+#aphorism_block{
+  margin: 0 20% 0% 20%;
+  padding: 4% 5% 4% 5%;
+  background-color: white;
+	padding-top: 20px;
+  border-radius: 10px 10px 10px 10px;
+  color: rgb(109, 232, 113);
+  text-align: center;
+  font-size: 28px;
+}
+
+#aphorism:first-letter {
+  font-size: 250%; 
+}
+
+#aphorism-autor {
+  text-align: right;
+  padding: 20px 0px 20px 0px;
+  font-size: 20px;
+}
+
+#footer {
+  color: white;
+  text-align: center;
+}
+
+#buttoms-blok {
+  padding: 0px 0px 40px 0px;
+  -webkit-user-select: none;
+  font-size: 20px;
+}
+
+ a {
+   color: white; /* link color */ 
+   text-decoration: none; /* no underlining */
+   }
+   a:visited {
+   color:  white; /* link color */
+   } 
+   a:hover {
+   color: white; /* color under mouse */  
+   text-decoration: none; /* no underlining */
+   }
+
+.button {
+   color: white; /* link color */ 
+   text-decoration: none; 
+   padding: 10px 15px;
+   background-color: rgb(109, 232, 113);
+   border-radius:5px 5px 5px 5px;
+   float: left;
+  /* no underlining */
+   }
+   .button:visited {
+   color: white; /* link color */
+   } 
+   .button:hover {
+   opacity:0.8;
+   color: white; /* color under mouse */  
+   text-decoration: none; /* no underlining */
+   }
+
+#new-quote {
+  float: right;
+}
+
+#tweet-quote {
+    margin:0px 10px 0px 0px;
+}
