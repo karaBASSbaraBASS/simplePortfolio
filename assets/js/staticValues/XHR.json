@@ -1,0 +1,411 @@
+{
+    "id": "res_1B7On55nBL",
+    "uuid": "db47b26b-e352-42a3-839e-abd3f96c043f",
+    "step": 2,
+    "title": "<h2>YEVHEN MYKHALOV</h2>",
+    "position":"<h2>ISTQB FL certified Test Engineer <span>//</span> HTML-coder</h2><h2>Automation QA <span>//</span> JavaScript</h2>",
+    "userId": 19496835,
+    "templateId": 9,
+    "colorHex": "505476",
+    "colorPicker": false,
+    "templateColors": [],
+    "templatePreview": null,
+    "paymentInitiated": 0,
+    "education": {
+        "items": [
+            {
+                "name": null,
+                "institution": null,
+                "city": null,
+                "description": null,
+                "finished": null,
+                "expanded": null,
+                "uuid": null,
+                "startMonth": "9",
+                "startYear": "2018",
+                "endMonth": "7",
+                "endYear": "2018",
+                "dateString": "Sep 2018 - Jul 2018"
+            }
+        ],
+        "visible": 1,
+        "active": 0,
+        "name": "education",
+        "label": "Education and Qualifications",
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "allDatesEmpty": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "work": {
+        "items": [
+            {
+                "startMonth": "9",
+                "startYear": "2013",
+                "endMonth": "10",
+                "endYear": "2016",
+                "employer": "StarWind Software",
+                "function": "Junior QA Engeneer (manual)",
+                "city": "Kiev",
+                "description": "<p><span style=\"color: rgba(0, 0, 0, 0.9);\">I was building up Storage Area Networks based on \"Star Wind\" program solution. Also was responsible for BlackBox testing.</span></p>"
+            },
+            {
+                "startMonth": "3",
+                "startYear": "2017",
+                "endMonth": "12",
+                "endYear": "2018",
+                "employer": "LeoStudio",
+                "function": "html/css coder",
+                "city": "Kiev",
+                "description": "<p>Creation of websites for clients of the company and their support, the layout of blocks, setting up forms. etc...</p>"
+            },
+            {
+                "startMonth": "12",
+                "startYear": "2018",
+                "endMonth": "10",
+                "endYear": "2019",
+                "function": "junior Front-end Developer",
+                "employer": "CF.digital",
+                "city": "Kiev",
+                "description": "<p>Creation of websites for clients of the company and their support, the layout of blocks, the layout of advertising banners, performance optimization for old projects, scripting pages with es5/jquery etc...</p>"
+            },
+            {
+                "startMonth": "12",
+                "startYear": "2019",
+                "endMonth": "12",
+                "endYear": "2020",
+                "employer": "INFOZAHYST",
+                "function": "QA Engineer (manual)",
+                "city": "Kiev",
+                "description": "<p>Writing test cases, planning and conducting regression tests, smoke tests. creating bugs and discussing them with front-end and back-end developers.</p>"
+            },
+            {
+                "startMonth": "12",
+                "startYear": "2021",
+                "endMonth": "7",
+                "endYear": "2021",
+                "employer": "INFOZAHYST",
+                "function": "junior automation QA Engineer",
+                "city": "Kiev",
+                "description": "<p>Automation of regression tests using Test Cafe JavaScript framework.</p><p>Due to the change of architecture, rewriting of regression autotests in C # + selenide.</p>"
+            },
+            {
+                "startMonth": "7",
+                "startYear": "2021",
+                "endMonth": "12",
+                "endYear": "2021",
+                "description": "<p>Writing scripts to generate test data using the Codecept framework + playwright library (JavaScript).</p><p>Automating regression tests of a banking application using the Codecept framework + playwright library (Type Script).</p>",
+                "city": "Kiev",
+                "employer": "GeeksForLess Inc.",
+                "function": "junior automation QA Engineer"
+            }
+        ],
+        "visible": 1,
+        "active": null,
+        "name": "work",
+        "label": "Work experience",
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "allDatesEmpty": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "hobby": {
+        "items": [
+            {
+                "name": "Hiking",
+                "expanded": null,
+                "uuid": null
+            },
+            {
+                "name": "FPV drone racing"
+            }
+        ],
+        "visible": 1,
+        "active": null,
+        "name": "hobby",
+        "label": "Interests",
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 1,
+        "placement": null,
+        "uuid": null
+    },
+    "skills": {
+        "items": [
+            {
+                "name": "JavaScript",
+                "level": "50"
+            },
+            {
+                "name": "TypeScript",
+                "level": "25"
+            },
+            {
+                "name": "HTML+CSS",
+                "level": "75"
+            },
+            {
+                "name": "GIT",
+                "level": "50"
+            },
+            {
+                "name": "Postman",
+                "level": "50"
+            },
+            {
+                "name": "C#",
+                "level": "25"
+            },
+            {
+                "name": "Java",
+                "level": "20"
+            }
+        ],
+        "visible": 1,
+        "active": null,
+        "name": "skill",
+        "label": "Skills",
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "language": {
+        "items": [
+            {
+                "name": "English : ",
+                "level": "B1 (pre-intermediate)",
+                "expanded": null,
+                "uuid": null
+            }
+        ],
+        "visible": 1,
+        "active": null,
+        "name": "language",
+        "label": "Languages",
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 1,
+        "placement": null,
+        "uuid": null
+    },
+    "course": {
+        "items": [
+            {
+                "name": null,
+                "institution": null,
+                "description": null,
+                "finished": null,
+                "expanded": null,
+                "uuid": null,
+                "startMonth": "9",
+                "startYear": "2018",
+                "endMonth": "7",
+                "endYear": "2018",
+                "dateString": "Sep 2018 - Jul 2018"
+            }
+        ],
+        "visible": 0,
+        "active": 0,
+        "name": "course",
+        "label": "Courses",
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "allDatesEmpty": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "profile": {
+        "visible": 1,
+        "active": null,
+        "name": "profile",
+        "about": "<p>I am ISTQB FL certified Test Engineer with a Specialist degree in Information Networks and Telecommunications by education. I have 4 plus years of experience in manual and automation testing. I am working as Automation QA Engineer at GeeksForLess Inc. I have been working in different domains like frontend development, manual/automation testing.</p>",
+        "aboutMore": "<p>As a tester, I have good experience in writing test cases, preparing traceability matrices, and writing bug reports. I have successfully performed testing like functional testing, smoke testing, regression testing, etc. I have enough knowledge of test Automation tools for quick covering regression test suite of web projects.</p>",
+        "label": "Profile"
+    },
+    "certificate": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "name": "certificate",
+        "label": "Сертифікати",
+        "saving": 0,
+        "items": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "extraCurricular": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "name": "extraCurricular",
+        "label": "Допоміжна діяльність",
+        "saving": 0,
+        "items": [
+            {
+                "startMonth": 9,
+                "startYear": 2018,
+                "endMonth": 7,
+                "endYear": 2018
+            }
+        ]
+    },
+    "reference": {
+        "items": [
+            {
+                "companyName": null,
+                "contactPerson": null,
+                "phone": null,
+                "email": null,
+                "description": null,
+                "expanded": null,
+                "uuid": null
+            }
+        ],
+        "onRequest": 0,
+        "visible": 0,
+        "active": 0,
+        "name": "reference",
+        "label": "References",
+        "expanded": null,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "characteristic": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 1,
+        "name": "characteristic",
+        "label": "Характеристики",
+        "saving": 0,
+        "items": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "itSkill": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "name": "itSkill",
+        "label": "Комп'ютерні навички",
+        "saving": 0,
+        "items": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "variousInformation": {
+        "visible": 0,
+        "active": 0,
+        "name": "variousInformation",
+        "description": null,
+        "label": "Publications",
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "availability": {
+        "items": [
+            {
+                "name": "link to my linkedin Profile : ",
+                "link": "<a href='linkedin.com/in/yevhen-mykhalov-883617119'>linkedin</a>"
+            },
+            {
+                "name": "link to my Github Profile : ",
+                "link": "<a href='github.com/karaBASSbaraBASS'>Github</a>"
+            },
+            {
+                "name": "My email : ",
+                "link": "<a href='mailto:evgen.mikhalov@gmail.com'>Send mail</a>"
+            }
+        ],
+        "visible": 1,
+        "active": 0,
+        "name": "availability",
+        "description": null,
+        "label": "Achievements",
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "placement": null,
+        "uuid": null
+    },
+    "additionalInformation": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 0,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "name": "additionalInformation",
+        "label": "Додаткова інформація",
+        "description": "",
+        "saving": 0
+    },
+    "privacyStatement": {
+        "active": 0,
+        "visible": 0,
+        "expanded": 1,
+        "pageBreak": 0,
+        "leftColumn": 0,
+        "name": "privacyStatement",
+        "label": "Політика конфіденційності",
+        "description": "",
+        "saving": 0
+    },
+    "formSections": [
+        "profile",
+        "work",
+        "education",
+        "hobby",
+        "reference",
+        "skill",
+        "language",
+        "course",
+        "availability",
+        "variousInformation"
+    ],
+    "sideBarSections": [
+        "skills",
+        "language",
+        "reference",
+        "availability",
+        "hobby"
+    ],
+    "languageSetting": "uk",
+    "autoSave": false,
+    "asyncSave": false,
+    "fetching": false,
+    "fetched": true,
+    "error": null,
+    "hash": "2f5c7a472f233b397c9d146ef0f1497ef2c0b7ec",
+    "createdAt": "2021-12-27T01:55:21+01:00",
+    "updatedAt": "2021-12-27T02:10:14+01:00",
+    "previewImage": null,
+    "_persist": {
+        "version": -1,
+        "rehydrated": true
+    }
+}

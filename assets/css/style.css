@@ -3352,7 +3352,7 @@ h5,
 h6 {
   font-family: "Ubuntu";
   font-weight: 300;
-  color: #333;
+  color: rgb(24, 35, 47);
 }
 
 p {
@@ -3376,7 +3376,6 @@ a:focus {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -3419,7 +3418,6 @@ hr {
   padding-bottom: 15px;
   position: fixed !important;
   z-index: 999;
-  max-width: 1440px;
 }
 
 .navbar-inverse {
@@ -3446,7 +3444,7 @@ hr {
 }
 
 .container {
-  width: 100%;
+  width: 100%!important;
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
@@ -3957,7 +3955,8 @@ input {
 
 .portfolioBlocks {
   width: 100% !important;
-  padding: 4.375rem 0 4.375rem 0;
+  padding: 4.375rem 0 0 0;
+  background-color: #f2f2f2;
 }
 
 .portfolioBlocks h4 {
@@ -4001,9 +4000,26 @@ article .counter h4 {
 }
 
 .aboutBlocks {
+  padding:0;
   background-color: #F2F2F2;
   width: 100% !important;
   padding: 4.375rem 0 0 0;
+}
+.name h2{
+  font-size: 6rem;
+}
+.name{
+  font-size: 38.1877px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.position{
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .aboutBlocks h4 {
@@ -4617,6 +4633,55 @@ img.mfp-img {
 .navbar-collapse {
   width: auto;
 }
+.headerSubsection .row, .footerSubsection {
+  background-color: #18232f;
+}
+.footerSubsection{
+  height: 4.375rem;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.sideBarAvatar{
+  min-width: 100%;
+  min-height: 600px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.name h2,
+.position h2{
+  text-align: left;
+}
+.title{
+  margin-left:40px;
+  margin-right:40px;
+}
+.sidebarDetails{
+  background-color: #c9d3c9;
+}
+.aboutBlocks h3{
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(24, 35, 47);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sidebarDetails {
+  text-align: left;
+}
+.sidebarDetails .textBlock{
+  margin: 4rem 3rem 3rem;
+}
+.textBlock li{
+  margin-left: 20px;
+  list-style: disc;
+}
+.titleFirst h2{
+  text-transform: uppercase;
+}
+.navbar-brand p, .navbar-brand h2{
+  margin: 0!important;
+}
+
 
 @media only screen and (min-width: 600px) {
   .progres {

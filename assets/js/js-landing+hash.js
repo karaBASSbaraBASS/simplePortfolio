@@ -25,7 +25,7 @@ function showSection(section, isAnimate) {
 	var
 		direction = section.replace(/#/, ''),
 		reqSection = $('section').filter('[data-section="' + direction + '"]'),
-		reqSectionPos = reqSection.offset().top;
+		reqSectionPos = reqSection.offset().top - 50;
 
 	if (isAnimate) {
 		$('body, html').animate({scrollTop: reqSectionPos}, 500);

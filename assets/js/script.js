@@ -1,12 +1,11 @@
 $(document).ready(function() {
     
-        $('.navbar-toggler').click(function(e) {
-            e.preventDefault();
-            
-            $(this).toggleClass('convert');
-      });
+  $('.navbar-toggler').click(function(e) {
+    e.preventDefault();     
+    $(this).toggleClass('convert');
+  });
 
-    $(document).ready(function(){
+  $(document).ready(function(){
     $('.slider1').bxSlider({
       slideWidth: 400,
       minSlides: 1,
@@ -15,12 +14,79 @@ $(document).ready(function() {
       slideMargin: 10
     });
   });
+
+
+  var obj;
+    
+  fetch('./assets/js/staticValues/XHR.json')
+    .then(response => response.json())
+    .then(data => obj = data)
+    .then((obj) => fillDataInProperPlace(obj))
+    .catch(error => console.log(error));
+      
+  function fillDataInProperPlace(data){
+    fillTextData(data.title, '.navbar-brand');
+    fillTextData(data.title, '.name');
+    fillTextData(data.position, '.position');
+    fillTextData(data.profile.about, '.introduction');
+
+    data.sideBarSections.forEach(element => {
+      if (data[element].visible) {
+        let div = document.createElement('div');
+        div.classList.add('textBlock');
+        let sidebar = document.querySelector('.sidebarDetails');
+        div.appendChild(makeH3(element));
+        div.appendChild(makeUL(data[element].items));
+
+        sidebar.appendChild(div);
+
+        
+      }
+    });
+    
+  }
+
+  function fillTextData(textValue, selector){
+    const cvName = document.querySelector(selector);
+    const p = document.createElement('p');
+    p.innerHTML = textValue;
+    cvName.appendChild(p);
+  }
+
+  function makeUL(array) {
+    var list = document.createElement('ul');
+
+    for (var i = 0; i < array.length; i++) {
+        
+        
+        var item = document.createElement('li');
+        item.appendChild(document.createTextNode(array[i].name));
+        if(array[i].link){
+          item.innerHTML = array[i].name + array[i].link;
+        }
+        if(array[i].level){
+          item.appendChild(document.createTextNode(array[i].level));
+        }
+
+        list.appendChild(item);
+        
+    }
+    
+    return list;
+  }
+  function makeH3(textValue) {
+    var item = document.createElement('h3');
+    item.appendChild(document.createTextNode(textValue));
+    return item;
+  }
+
+ 
   
 });
 
 $('.arrowDown__link').on('click', function(event) {
   event.preventDefault();
-  var advantages = $('.advantages').offset().top - 100;
+  var advantages = $('.aboutBlocks').offset().top - 50;
   $('body, html').animate({scrollTop: advantages}, 500);
 });
 
@@ -184,14 +250,4 @@ $(document).ready(function() {
 
 });
 
-// magnific popup gallery
-$(document).ready(function() {
-// This will create a single gallery from all elements that have class "gallery-item"
-  $('.gallery-item').magnificPopup({
-    type: 'image',
-    gallery:{
-      enabled:true
-    }
-  });
-});
-// magnific popup gallery end
+
