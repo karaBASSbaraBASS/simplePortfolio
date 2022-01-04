@@ -4668,7 +4668,7 @@ img.mfp-img {
 .sidebarDetails {
   text-align: left;
 }
-.sidebarDetails .textBlock{
+.sidebarDetails .textBlock, .contentBlock .textBlock{
   margin: 4rem 3rem 3rem;
 }
 .textBlock li{
@@ -4680,6 +4680,63 @@ img.mfp-img {
 }
 .navbar-brand p, .navbar-brand h2{
   margin: 0!important;
+}
+.contentBlock, .highlited{
+  text-align: left;
+}
+
+.highlited{
+  font-weight: 700!important;
+  font-style: normal;
+  color: rgb(24, 35, 47);
+  text-decoration: none;
+}
+.subHeading{
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(24, 35, 47);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/*timeline*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #c9d3c9;
+  top: 4rem;
+  bottom: 0;
+  left: 0px;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.tmContainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+
+/* The circles on the timeline */
+.tmContainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -14px;
+  background-color: white;
+  border: 4px solid #18232f;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 

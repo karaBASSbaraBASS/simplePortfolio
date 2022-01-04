@@ -35,15 +35,68 @@ $(document).ready(function() {
         let div = document.createElement('div');
         div.classList.add('textBlock');
         let sidebar = document.querySelector('.sidebarDetails');
-        div.appendChild(makeH3(element));
+        div.appendChild(makeH3(data[element].label));
         div.appendChild(makeUL(data[element].items));
-
         sidebar.appendChild(div);
-
-        
       }
     });
-    
+    data.formSections.forEach(element => {
+      if (data[element].visible) {
+        let div = document.createElement('div');
+        div.classList.add('textBlock');
+        let mainBlock = document.querySelector('.contentBlock');
+
+        //create headings for sections
+        div.appendChild(makeH3(data[element].label));
+
+        if (data[element].aboutMore){
+          div.appendChild(makeP(data[element].aboutMore));
+        }
+        if(element == "work"){
+          createWorkExpirienceTimeline(div, element, data)
+        }
+        if(element == "education"){
+          createEducationTimeline(div, element, data)
+        }
+
+       
+        //div.appendChild(makeHighlitedSubHeading(textValue));
+        mainBlock.appendChild(div);
+      }
+      
+    });
+  }
+
+  function createWorkExpirienceTimeline(placeToInsert, element, data){
+    //create timeline for expirience section
+    placeToInsert.classList.add('timeline');
+    //create text block inside each element with items
+    if (!data[element].items == 0){
+      data[element].items.forEach(element => {
+        let newDiv = document.createElement('div');
+        newDiv.appendChild(makeHighlitedSubHeading(element.function));
+        newDiv.appendChild(makeSubHeading(element.employer, element.startMonth, element.startYear, element.endMonth, element.endYear));
+        newDiv.appendChild(makeResponsibilitiesUL(element.descriptionItems));
+        newDiv.classList.add('tmContainer');
+        placeToInsert.appendChild(newDiv);
+      })
+    }
+  }
+
+  function createEducationTimeline(placeToInsert, element, data){
+    //create timeline for expirience section
+    placeToInsert.classList.add('timeline');
+    //create text block inside each element with items
+    if (!data[element].items == 0){
+      data[element].items.forEach(element => {
+        let newDiv = document.createElement('div');
+        newDiv.appendChild(makeHighlitedSubHeading(element.name));
+        newDiv.appendChild(makeSubHeading(element.institution, element.startMonth, element.startYear, element.endMonth, element.endYear));
+        placeToInsert.appendChild(makeP(element.description));
+        newDiv.classList.add('tmContainer');
+        placeToInsert.appendChild(newDiv);
+      })
+    }
   }
 
   function fillTextData(textValue, selector){
@@ -55,10 +108,7 @@ $(document).ready(function() {
 
   function makeUL(array) {
     var list = document.createElement('ul');
-
     for (var i = 0; i < array.length; i++) {
-        
-        
         var item = document.createElement('li');
         item.appendChild(document.createTextNode(array[i].name));
         if(array[i].link){
@@ -67,17 +117,43 @@ $(document).ready(function() {
         if(array[i].level){
           item.appendChild(document.createTextNode(array[i].level));
         }
-
         list.appendChild(item);
-        
     }
-    
+    return list;
+  }
+  function makeResponsibilitiesUL(array) {
+    var list = document.createElement('ul');
+    for (var i = 0; i < array.length; i++) {
+        var item = document.createElement('li');
+        item.appendChild(document.createTextNode(array[i]));
+        
+        list.appendChild(item);
+    }
     return list;
   }
   function makeH3(textValue) {
     var item = document.createElement('h3');
     item.appendChild(document.createTextNode(textValue));
     return item;
+  }
+  function makeP(textValue) {
+    var item = document.createElement('P');
+    item.appendChild(document.createTextNode(textValue));
+    return item;
+  }
+  function makeHighlitedSubHeading(textValue) {
+    var item = document.createElement('P');
+    item.classList.add('subHeading');
+    item.classList.add('highlited');
+    item.appendChild(document.createTextNode(textValue));
+    return item;
+  }
+  function makeSubHeading(textValue, startMonth, startYear, endMonth, endYear) {
+    var item = document.createElement('P');
+    item.classList.add('subHeading');
+    item.appendChild(document.createTextNode(startMonth+"/"+startYear+" - "+endMonth+"/"+endYear+", "+textValue));
+    return item;
+    
   }
 
  

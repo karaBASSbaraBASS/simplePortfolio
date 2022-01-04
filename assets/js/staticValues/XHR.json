@@ -14,18 +14,43 @@
     "education": {
         "items": [
             {
-                "name": null,
-                "institution": null,
+                "name": "ISTQB Certified Tester Foundation Level Syllabus 2018 Version (id:73402)",
+                "institution": "State Research Institute of Informatization and Modeling of Economics of the Ministry of Economy of Ukraine",
                 "city": null,
-                "description": null,
+                "description": "",
+                "finished": null,
+                "expanded": null,
+                "uuid": null,
+                "startMonth": "3",
+                "startYear": "2020",
+                "endMonth": "4",
+                "endYear": "2020"
+            },
+            {
+                "name": "Certified specialist and system integrator of the interstate network (system administrator)",
+                "institution": "State Research Institute of Informatization and Modeling of Economics of the Ministry of Economy of Ukraine",
+                "city": null,
+                "description": "",
                 "finished": null,
                 "expanded": null,
                 "uuid": null,
                 "startMonth": "9",
-                "startYear": "2018",
-                "endMonth": "7",
-                "endYear": "2018",
-                "dateString": "Sep 2018 - Jul 2018"
+                "startYear": "2012",
+                "endMonth": "6",
+                "endYear": "2013"
+            },
+            {
+                "name": "Specialist Degree in Computer science: Info-communication systems",
+                "institution": "State University of Information and Communication Technologies",
+                "city": null,
+                "description": "",
+                "finished": null,
+                "expanded": null,
+                "uuid": null,
+                "startMonth": "1",
+                "startYear": "2009",
+                "endMonth": "6",
+                "endYear": "2013"
             }
         ],
         "visible": 1,
@@ -42,34 +67,30 @@
     "work": {
         "items": [
             {
-                "startMonth": "9",
-                "startYear": "2013",
-                "endMonth": "10",
-                "endYear": "2016",
-                "employer": "StarWind Software",
-                "function": "Junior QA Engeneer (manual)",
-                "city": "Kiev",
-                "description": "<p><span style=\"color: rgba(0, 0, 0, 0.9);\">I was building up Storage Area Networks based on \"Star Wind\" program solution. Also was responsible for BlackBox testing.</span></p>"
-            },
-            {
-                "startMonth": "3",
-                "startYear": "2017",
+                "startMonth": "7",
+                "startYear": "2021",
                 "endMonth": "12",
-                "endYear": "2018",
-                "employer": "LeoStudio",
-                "function": "html/css coder",
+                "endYear": "2021",
+                "descriptionItems": [
+                    "Writing scripts to generate test data using the Codecept framework + playwright library (JavaScript).",
+                    "Automating regression tests of a banking application using the Codecept framework + playwright library (Type Script)."
+                ],
                 "city": "Kiev",
-                "description": "<p>Creation of websites for clients of the company and their support, the layout of blocks, setting up forms. etc...</p>"
+                "employer": "GeeksForLess Inc.",
+                "function": "junior automation QA Engineer"
             },
             {
                 "startMonth": "12",
-                "startYear": "2018",
-                "endMonth": "10",
-                "endYear": "2019",
-                "function": "junior Front-end Developer",
-                "employer": "CF.digital",
+                "startYear": "2020",
+                "endMonth": "7",
+                "endYear": "2021",
+                "employer": "INFOZAHYST",
+                "function": "junior automation QA Engineer",
                 "city": "Kiev",
-                "description": "<p>Creation of websites for clients of the company and their support, the layout of blocks, the layout of advertising banners, performance optimization for old projects, scripting pages with es5/jquery etc...</p>"
+                "descriptionItems": [
+                    "Automation of regression tests using Test Cafe JavaScript framework.",
+                    "Due to the change of architecture, rewriting of regression autotests in C# + selenide."
+                ]
             },
             {
                 "startMonth": "12",
@@ -79,28 +100,52 @@
                 "employer": "INFOZAHYST",
                 "function": "QA Engineer (manual)",
                 "city": "Kiev",
-                "description": "<p>Writing test cases, planning and conducting regression tests, smoke tests. creating bugs and discussing them with front-end and back-end developers.</p>"
+                "descriptionItems": [
+                    "Planning and conducting regression tests, smoke tests.",
+                    "Analising documentation and writing test cases.",
+                    "Creating bug reports and discussing them with front-end and back-end developers."
+                ]
             },
             {
                 "startMonth": "12",
-                "startYear": "2021",
-                "endMonth": "7",
-                "endYear": "2021",
-                "employer": "INFOZAHYST",
-                "function": "junior automation QA Engineer",
+                "startYear": "2018",
+                "endMonth": "10",
+                "endYear": "2019",
+                "function": "junior Front-end Developer",
+                "employer": "CF.digital",
                 "city": "Kiev",
-                "description": "<p>Automation of regression tests using Test Cafe JavaScript framework.</p><p>Due to the change of architecture, rewriting of regression autotests in C # + selenide.</p>"
+                "descriptionItems": [
+                    "Creation of websites for clients of the company and their support, the layout of blocks, the layout of advertising banners..", 
+                    "Performance optimization for old projects, scripting pages with es5/jquery."
+                ]
             },
             {
-                "startMonth": "7",
-                "startYear": "2021",
+                "startMonth": "3",
+                "startYear": "2017",
                 "endMonth": "12",
-                "endYear": "2021",
-                "description": "<p>Writing scripts to generate test data using the Codecept framework + playwright library (JavaScript).</p><p>Automating regression tests of a banking application using the Codecept framework + playwright library (Type Script).</p>",
+                "endYear": "2018",
+                "employer": "LeoStudio",
+                "function": "html/css coder",
                 "city": "Kiev",
-                "employer": "GeeksForLess Inc.",
-                "function": "junior automation QA Engineer"
+                "descriptionItems": [
+                    "Creation of websites for clients of the company and their support.",
+                    "Creation the layout of blocks, setting up forms."
+                ]
+            },
+            {
+                "startMonth": "9",
+                "startYear": "2013",
+                "endMonth": "10",
+                "endYear": "2016",
+                "employer": "StarWind Software",
+                "function": "Junior QA Engeneer (manual)",
+                "city": "Kiev",
+                "descriptionItems": [
+                    "I was building up Storage Area Networks based on \"Star Wind\" program solution.", 
+                    "Also was responsible for BlackBox testing."
+                ]
             }
+           
         ],
         "visible": 1,
         "active": null,
@@ -137,32 +182,32 @@
     "skills": {
         "items": [
             {
-                "name": "JavaScript",
-                "level": "50"
+                "name": "JavaScript"
+                
             },
             {
-                "name": "TypeScript",
-                "level": "25"
+                "name": "TypeScript"
+                
             },
             {
-                "name": "HTML+CSS",
-                "level": "75"
+                "name": "HTML+CSS"
+                
             },
             {
-                "name": "GIT",
-                "level": "50"
+                "name": "GIT"
+                
             },
             {
-                "name": "Postman",
-                "level": "50"
+                "name": "Postman"
+                
             },
             {
-                "name": "C#",
-                "level": "25"
+                "name": "C#"
+                
             },
             {
-                "name": "Java",
-                "level": "20"
+                "name": "Java"
+                
             }
         ],
         "visible": 1,
@@ -180,6 +225,18 @@
             {
                 "name": "English : ",
                 "level": "B1 (pre-intermediate)",
+                "expanded": null,
+                "uuid": null
+            },
+            {
+                "name": "Ukrainian : ",
+                "level": "native",
+                "expanded": null,
+                "uuid": null
+            },
+            {
+                "name": "Russian : ",
+                "level": "native",
                 "expanded": null,
                 "uuid": null
             }
@@ -222,11 +279,12 @@
         "uuid": null
     },
     "profile": {
+        "items": 0,
         "visible": 1,
         "active": null,
-        "name": "profile",
-        "about": "<p>I am ISTQB FL certified Test Engineer with a Specialist degree in Information Networks and Telecommunications by education. I have 4 plus years of experience in manual and automation testing. I am working as Automation QA Engineer at GeeksForLess Inc. I have been working in different domains like frontend development, manual/automation testing.</p>",
-        "aboutMore": "<p>As a tester, I have good experience in writing test cases, preparing traceability matrices, and writing bug reports. I have successfully performed testing like functional testing, smoke testing, regression testing, etc. I have enough knowledge of test Automation tools for quick covering regression test suite of web projects.</p>",
+        "name": "about",
+        "about": "I am ISTQB FL certified Test Engineer with a Specialist degree in Information Networks and Telecommunications by education. I have 3 plus years of experience in manual and 1 year in automation testing. I am working as Automation QA Engineer at GeeksForLess Inc. I have been working in different domains like frontend development, manual/automation testing.",
+        "aboutMore": "As a tester, I have good experience in writing test cases, preparing traceability matrices, and writing bug reports. I have successfully performed testing like functional testing, smoke testing, regression testing, etc. I have enough knowledge of test Automation tools for quick covering regression test suite of web projects.",
         "label": "Profile"
     },
     "certificate": {
@@ -340,13 +398,17 @@
             {
                 "name": "My email : ",
                 "link": "<a href='mailto:evgen.mikhalov@gmail.com'>Send mail</a>"
+            },
+            {
+                "name": "My phone(out-of-country) : ",
+                "link": "<a href='tel:+380935466501'>+38093-546-65-01</a>"
             }
         ],
         "visible": 1,
         "active": 0,
         "name": "availability",
         "description": null,
-        "label": "Achievements",
+        "label": "Contacts",
         "expanded": 0,
         "pageBreak": 0,
         "leftColumn": 0,
@@ -376,16 +438,12 @@
         "saving": 0
     },
     "formSections": [
-        "profile",
         "work",
         "education",
-        "hobby",
         "reference",
-        "skill",
-        "language",
         "course",
-        "availability",
-        "variousInformation"
+        "variousInformation",
+        "profile"
     ],
     "sideBarSections": [
         "skills",
