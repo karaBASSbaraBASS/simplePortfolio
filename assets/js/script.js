@@ -25,7 +25,7 @@ $(document).ready(function() {
     .catch(error => console.log(error));
       
   function fillDataInProperPlace(data){
-    fillTextData(data.title, '.navbar-brand');
+    //fillTextData(data.title, '.navbar-brand');
     fillTextData(data.title, '.name');
     fillTextData(data.position, '.position');
     fillTextData(data.profile.about, '.introduction');
