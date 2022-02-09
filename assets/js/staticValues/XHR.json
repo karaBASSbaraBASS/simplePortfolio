@@ -69,12 +69,11 @@
             {
                 "startMonth": "7",
                 "startYear": "2021",
-                "endMonth": "2",
-                "endYear": "2022",
+                "endMonth": "12",
+                "endYear": "2021",
                 "descriptionItems": [
                     "Writing scripts to generate test data using the Codecept framework + playwright library (JavaScript).",
-                    "Automating regression tests of a banking application using the Codecept framework + playwright library (Type Script).",
-                    "Learning the Java language. Covering a website with autotests based on the Selenide library."
+                    "Automating regression tests of a banking application using the Codecept framework + playwright library (Type Script)."
                 ],
                 "city": "Kiev",
                 "employer": "GeeksForLess Inc.",
@@ -394,7 +393,7 @@
             },
             {
                 "name": "link to my Github Profile : ",
-                "link": "<a href='https://github.com/karaBASSbaraBASS'>Github</a>"
+                "link": "<a href='github.com/karaBASSbaraBASS'>Github</a>"
             },
             {
                 "name": "My email : ",
