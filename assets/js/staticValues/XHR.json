@@ -70,9 +70,9 @@
                 "startMonth": "3",
                 "startYear": "2022",
                 "endMonth": "0",
-                "endYear": "0",
+                "endYear": "Till now",
                 "descriptionItems": [
-                    "Automating regression tests (JavaScript)."
+                    "Automating tests (JavaScript)."
                 ],
                 "city": "Kiev",
                 "employer": "EPAM",
